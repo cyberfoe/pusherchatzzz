@@ -7,10 +7,11 @@ $(document).ready =>
   updateChat = (data) ->
     $('.chat-box').append """
       <div class="col-12">
-        <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
+        <div class="chat bg-primary d-inline-block text-left text-white mb-2">
           <div class="chat-bubble">
             <small class="chat-username">#{data.username}</small>
             <p class="m-0 chat-message">#{data.message}</p>
+            <p class="m-0 chat-time">#{data.created_at}</p>
           </div>
         </div>
       </div>

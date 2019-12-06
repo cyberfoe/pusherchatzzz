@@ -39,15 +39,17 @@
 }
 
 .chat {
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0rem 2rem 0 1rem;
 }
 
 .chat-username {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .chat-message {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
 }
-
+.chat-time { 
+  font-size: 0.8rem;
+}

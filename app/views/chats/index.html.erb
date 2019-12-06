@@ -12,10 +12,11 @@
           <h4 class="username d-none mb-3"></h4>
           <% @chats.each do |chat| %>
             <div class="col-12">
-              <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
+              <div class="chat bg-primary d-inline-block text-left text-white mb-2">
                 <div class="chat-bubble">
                   <small class="chat-username"><%= chat.username %></small>
                   <p class="m-0 chat-message"><%= chat.message %></p>
+                  <p class= "m-0 chat-time"><%= chat.created_at %></p>
                 </div>
               </div>
             </div>
@@ -34,7 +35,7 @@
               </div>
             <% end %>
             <div class="field position-relative">
-              <%= form.text_field :message, id: :message, class: "form-control", required: true, disabled: true %>
+            <%= form.text_field :message, id: :message, class: "form-control", required: true, disabled: true %>
               <%= form.hidden_field :username, id: :username %>
             </div>
           <% end %>
